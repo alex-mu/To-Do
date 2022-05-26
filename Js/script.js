@@ -10,7 +10,7 @@ document.querySelector('#push').onclick = function(){
                     ${document.querySelector('#newtask input').value}
                 </span>
                 <button class="delete">
-                    <i class="fa-solid fa-trash-can"></i>
+                    <i class="fa fa-trash-can"></i>
                 </button>
             </div>
         `;
@@ -18,7 +18,7 @@ document.querySelector('#push').onclick = function(){
         var current_tasks = document.querySelectorAll(".delete");
         for(var i=0; i<current_tasks.length; i++){
             current_tasks[i].onclick = function(){
-                this.parentNode.removeChild();
+                this.parentNode.remove();
             }
         }
 
